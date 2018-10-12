@@ -1,0 +1,21 @@
+{
+  "name": "disco-fruit",
+  "version": "0.1.0",
+  "description": "",
+  "bin": "target/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --out-path pkg"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "pkg": "^4.3.4"
+  },
+  "pkg": {
+    "scripts": "target/**/*.js"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9"
+  }
+}
