@@ -15,4 +15,6 @@ pom.xml.asc
 .cljs_node_repl
 package-lock.json
 node_modules
-pkg/
+/pkg/
+/out/
+/cljs-test-runner-out/

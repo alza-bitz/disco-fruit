@@ -1,0 +1,13 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.9.0"}
+        org.clojure/clojurescript {:mvn/version "1.10.339"}}
+ :aliases {:dev {:extra-paths ["test"]
+                 :extra-deps {org.clojure/test.check {:mvn/version "0.9.0"}
+                              plumula/mimolette {:mvn/version "0.2.1"}}}
+           :test-cljs {:extra-deps {olical/cljs-test-runner {:mvn/version "3.1.0"}}
+                       :main-opts ["-m" "cljs-test-runner.main"]}
+           :compile-cljs {:main-opts ["-m" "cljs.main" "-co" "compile-opts.edn" "-c" "disco-fruit.main"]}
+           :nrepl-server {:extra-deps {cider/cider-nrepl {:mvn/version "0.18.0"}
+                                       cider/piggieback {:mvn/version "0.3.9"}}
+                          :main-opts ["-m" "nrepl.cmdline" "--middleware"
+                                      "[cider.nrepl/cider-middleware,cider.piggieback/wrap-cljs-repl]"]}}}
