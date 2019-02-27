@@ -1,4 +1,4 @@
-(ns disco-fruit.main (:require
+(ns disco-fruit.cli (:require
                       [disco-fruit.core :as c]
                       [disco-fruit.data :as d]
                       [clojure.string :as s]

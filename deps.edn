@@ -6,7 +6,7 @@
                               plumula/mimolette {:mvn/version "0.2.1"}}}
            :test-cljs {:extra-deps {olical/cljs-test-runner {:mvn/version "3.2.0"}}
                        :main-opts ["-m" "cljs-test-runner.main"]}
-           :compile-cljs {:main-opts ["-m" "cljs.main" "-co" "compile-opts.edn" "-c" "disco-fruit.main"]}
+           :compile-cljs {:main-opts ["-m" "cljs.main" "-co" "compile-opts.edn" "-c" "disco-fruit.cli"]}
            :nrepl-server {:extra-deps {cider/cider-nrepl {:mvn/version "0.21.1"}
                                        cider/piggieback {:mvn/version "0.4.0"}
                                        org.clojure/tools.namespace {:mvn/version "0.2.11"}}
